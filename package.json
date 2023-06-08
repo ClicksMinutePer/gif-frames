@@ -1,5 +1,5 @@
 {
-  "name": "@nsfw-filter/gif-frames",
+  "name": "@clicks/gif-frames",
   "version": "1.0.2",
   "description": "Pure JavaScript tool for extracting GIF frames and saving to file",
   "main": "gif-frames.js",
@@ -31,9 +31,9 @@
   "author": "Ben Wiley",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nsfw-filter/gif-frames/issues"
+    "url": "https://github.com/ClicksMinutePer/gif-frames/issues"
   },
-  "homepage": "https://github.com/nsfw-filter/gif-frames#readme",
+  "homepage": "https://github.com/ClicksMinutePer/gif-frames#readme",
   "dependencies": {
     "@nsfw-filter/save-pixels": "^2.3.4",
     "get-pixels-frame-info-update": "3.3.2",
