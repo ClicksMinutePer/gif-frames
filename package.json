@@ -28,7 +28,8 @@
     "javascript",
     "pure-js"
   ],
-  "author": "Ben Wiley",
+  "author": "Clicks <admin@clicks.codes> (https://clicks.codes)",
+  "contributors": [{"name":"Ben Wiley"}]
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ClicksMinutePer/gif-frames/issues"
@@ -36,7 +37,7 @@
   "homepage": "https://github.com/ClicksMinutePer/gif-frames#readme",
   "dependencies": {
     "@nsfw-filter/save-pixels": "^2.3.4",
-    "get-pixels-frame-info-update": "3.3.2",
+    "@clicks/get-pixels": "^4.0.3",
     "multi-integer-range": "3.0.0"
   },
   "devDependencies": {
