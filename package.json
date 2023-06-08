@@ -1,15 +1,10 @@
 {
   "name": "@clicks/gif-frames",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Pure JavaScript tool for extracting GIF frames and saving to file",
   "main": "gif-frames.js",
   "types": "gif-frames.d.ts",
-  "bundled": "dist/gif-frames.js",
-  "bundled-min": "dist/gif-frames.min.js",
   "scripts": {
-    "build": "rimraf dist && mkdirp dist",
-    "dev": "mkdirp dist && watchify gif-frames.js -o dist/gif-frames.js -s gifFrames",
-    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -36,10 +31,5 @@
     "@nsfw-filter/save-pixels": "^2.3.4",
     "@clicks/get-pixels": "^4.0.3",
     "multi-integer-range": "3.0.0"
-  },
-  "devDependencies": {
-    "mkdirp": "0.5.1",
-    "rimraf": "2.6.1",
-    "watchify": "3.11.0"
   }
 }
