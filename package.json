@@ -1,23 +1,20 @@
 {
   "name": "@clicks/gif-frames",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Pure JavaScript tool for extracting GIF frames and saving to file",
   "main": "gif-frames.js",
   "types": "gif-frames.d.ts",
   "bundled": "dist/gif-frames.js",
   "bundled-min": "dist/gif-frames.min.js",
   "scripts": {
-    "build:clean": "rimraf dist && mkdirp dist",
-    "build:umd": "browserify gif-frames.js -o dist/gif-frames.js -s gifFrames",
-    "build:uglify": "uglifyjs dist/gif-frames.js -o dist/gif-frames.min.js",
-    "build": "npm run build:clean && npm run build:umd && npm run build:uglify",
+    "build": "rimraf dist && mkdirp dist",
     "dev": "mkdirp dist && watchify gif-frames.js -o dist/gif-frames.js -s gifFrames",
     "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/nsfw-filter/gif-frames.git"
+    "url": "git+ssh://git@github.com/ClicksMinutePer/gif-frames.git"
   },
   "keywords": [
     "gif",
@@ -29,7 +26,7 @@
     "pure-js"
   ],
   "author": "Clicks <admin@clicks.codes> (https://clicks.codes)",
-  "contributors": [{"name":"Ben Wiley"}]
+  "contributors": [{"name":"Ben Wiley"}],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ClicksMinutePer/gif-frames/issues"
@@ -41,10 +38,8 @@
     "multi-integer-range": "3.0.0"
   },
   "devDependencies": {
-    "browserify": "16.2.3",
     "mkdirp": "0.5.1",
     "rimraf": "2.6.1",
-    "uglify-js": "3.0.20",
     "watchify": "3.11.0"
   }
 }
