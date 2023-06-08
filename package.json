@@ -1,6 +1,6 @@
 {
   "name": "@clicks/gif-frames",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Pure JavaScript tool for extracting GIF frames and saving to file",
   "main": "gif-frames.js",
   "types": "gif-frames.d.ts",
