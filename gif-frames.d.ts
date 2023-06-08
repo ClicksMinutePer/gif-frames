@@ -1,12 +1,12 @@
 import {Initializer} from "multi-integer-range";
 
-declare module "@nsfw-filter/gif-frames" {
+declare module "@clicks/gif-frames" {
 
     export default function gifFrames<T extends GifFrameOptions>(options: T): Promise<GifFrameData<T>[]>;
     export default function gifFrames<T extends GifFrameOptions>(options: T, callback: (err: Error, frameData: GifFrameData<T>[]) => void): void;
 
     type GifOutputType = "jpeg" | "jpg" | "gif" | "png" | "canvas";
-    type GifFrameData<T extends GifFrameOptions> = T["outputType"] extends "canvas" ? GifFrameCanvas : GifFrameReadableStream;
+    type GifFrameData<T extends GifFrameOptions> = T["outputType"] extends "canvas" ? GifFrameCanvas : GifFrameBuffer;
 
     interface GifFrameOptions {
         url: string | ArrayBuffer;
